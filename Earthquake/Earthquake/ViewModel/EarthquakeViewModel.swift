@@ -20,3 +20,16 @@ final class EarthquakeViewModel {
     }
 }
 
+extension EarthquakeViewModel {
+    func getdata(completion: @escaping () -> Void) {
+        dataManager.loadData { result in
+            switch result {
+            case .success(let data):
+                self.earthQuakes = data
+            case .failure(let error):
+                self.error = error
+            }
+            completion()
+        }
+    }
+}

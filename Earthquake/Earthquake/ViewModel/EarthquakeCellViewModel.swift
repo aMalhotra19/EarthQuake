@@ -10,6 +10,11 @@ import Foundation
 struct EarthquakeCellViewModel {    
     let title: String?
     let magnitude: String?
-    var dateString: String?
+    var dateString: String {
+        guard let time = time else {
+            return Constants.emptyString
+        }
+        return DateUtility.convertIntToDate(time: time)
+    }
     var time: Int64?
 }

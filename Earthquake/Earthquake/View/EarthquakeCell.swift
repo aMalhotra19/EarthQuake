@@ -12,4 +12,10 @@ final class EarthquakeCell: UITableViewCell {
     @IBOutlet var title: UILabel!
     @IBOutlet var magnitude: UILabel!
     @IBOutlet var date: UILabel!
+    
+    func configureCell(cellViewModel: EarthquakeCellViewModel) {
+        title.text = cellViewModel.title
+        magnitude.text = cellViewModel.magnitude
+        date.text = cellViewModel.dateString
+    }
 }

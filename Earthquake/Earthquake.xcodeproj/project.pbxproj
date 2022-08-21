@@ -20,6 +20,8 @@
 		9D0D452F28ACD76300B7EC38 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0D452E28ACD76300B7EC38 /* ServiceManager.swift */; };
 		9D0D453128ACD77800B7EC38 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0D453028ACD77800B7EC38 /* DataManager.swift */; };
 		9D0D453528ACDEB600B7EC38 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0D453428ACDEB600B7EC38 /* Constants.swift */; };
+		9DC3AC4B28ADD9070022D3C0 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC3AC4A28ADD9070022D3C0 /* DateUtility.swift */; };
+		9DC3AC5C28AE0C350022D3C0 /* UIActivityIndicatorView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC3AC5B28AE0C350022D3C0 /* UIActivityIndicatorView+Helper.swift */; };
 		9DC3AC6828B011390022D3C0 /* NetworkCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9DC3AC6728B011390022D3C0 /* NetworkCore.docc */; };
 		9DC3AC6E28B0113A0022D3C0 /* NetworkCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC3AC6428B011390022D3C0 /* NetworkCore.framework */; };
 		9DC3AC7528B0113A0022D3C0 /* NetworkCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC3AC7428B0113A0022D3C0 /* NetworkCoreTests.swift */; };
@@ -95,7 +97,9 @@
 		9D0D452E28ACD76300B7EC38 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		9D0D453028ACD77800B7EC38 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		9D0D453428ACDEB600B7EC38 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9DC3AC4A28ADD9070022D3C0 /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
 		9DC3AC5228ADFEB50022D3C0 /* EarthquakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthquakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC3AC5B28AE0C350022D3C0 /* UIActivityIndicatorView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+Helper.swift"; sourceTree = "<group>"; };
 		9DC3AC6428B011390022D3C0 /* NetworkCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC3AC6628B011390022D3C0 /* NetworkCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkCore.h; sourceTree = "<group>"; };
 		9DC3AC6728B011390022D3C0 /* NetworkCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkCore.docc; sourceTree = "<group>"; };
@@ -231,6 +235,8 @@
 			children = (
 				9D0D453028ACD77800B7EC38 /* DataManager.swift */,
 				9D0D453428ACDEB600B7EC38 /* Constants.swift */,
+				9DC3AC4A28ADD9070022D3C0 /* DateUtility.swift */,
+				9DC3AC5B28AE0C350022D3C0 /* UIActivityIndicatorView+Helper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -446,7 +452,9 @@
 				9D0D452228ACD33E00B7EC38 /* EarthquakeCell.swift in Sources */,
 				9D0D44F328ACCF3900B7EC38 /* SceneDelegate.swift in Sources */,
 				9D0D452728ACD45100B7EC38 /* EarthquakeCellViewModel.swift in Sources */,
+				9DC3AC5C28AE0C350022D3C0 /* UIActivityIndicatorView+Helper.swift in Sources */,
 				9D0D453128ACD77800B7EC38 /* DataManager.swift in Sources */,
+				9DC3AC4B28ADD9070022D3C0 /* DateUtility.swift in Sources */,
 				9D0D452B28ACD47300B7EC38 /* EarthquakeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
