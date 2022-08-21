@@ -9,6 +9,9 @@ import Foundation
 import UIKit
 
 extension UIActivityIndicatorView {
+    /// Convfigure activityview.
+    /// Private access so it cannot be modified from outside
+    /// Returns self
     private func configureActivityIndicator(with view: UIView) -> UIActivityIndicatorView {
         self.color = UIColor.brown
         self.center = view.center

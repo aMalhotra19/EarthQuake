@@ -11,6 +11,7 @@ import Combine
 public final class NetworkServices {
     public init() {}
     
+    /// Fetch data and returns generic error, if any.
     public func fetchData(url: URL, completion: @escaping (Result<Data, Error>) -> Void ) {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             DispatchQueue.main.async {

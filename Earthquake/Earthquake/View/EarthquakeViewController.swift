@@ -21,6 +21,10 @@ final class EarthquakeViewController: UIViewController {
     private func reloadView() {
         getData()
     }
+    
+    /// Gets data from api
+    /// Adds and removes activity indicator when data is fetched
+
     private func getData() {
         activityView.showLoadingIndicator(with: view)
         viewModel.getdata { [weak self] in

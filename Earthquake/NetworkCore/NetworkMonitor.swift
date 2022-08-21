@@ -13,7 +13,8 @@ public class NetworkMonitor {
     private init() {}
     private var monitor: NWPathMonitor?
     private let queue = DispatchQueue(label: "Monitor")
-
+    /// Monitors Network for connectivity
+    /// path.status = .satisfied, indicates network availability
     public func monitorNetwork(completion: @escaping ((Bool) -> Void)) {
         monitor = NWPathMonitor()
         monitor?.pathUpdateHandler = { path in
