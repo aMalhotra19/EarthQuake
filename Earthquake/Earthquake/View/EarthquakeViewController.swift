@@ -26,13 +26,13 @@ final class EarthquakeViewController: UIViewController {
     /// Adds and removes activity indicator when data is fetched
 
     private func getData() {
-        activityView.showLoadingIndicator(with: view)
+        activityView.show(with: view)
         viewModel.getdata { [weak self] in
             guard let self = self else {
                 return
             }
             DispatchQueue.main.async {
-                self.activityView.hideLoadingIndicator()
+                self.activityView.hide()
                 if self.viewModel.earthQuakes != nil {
                     self.errorView.isHidden = true
                     if let currentAlert = self.presentedViewController as? UIAlertController {

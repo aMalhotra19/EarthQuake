@@ -15,7 +15,7 @@ final class DataManager {
     private init() {}
     
     func loadData(completion: @escaping (Result<Earthquake, NetworkError>) -> Void ) {
-        ServiceManager().fetchEarthquakeData(from: Constants.urlString) { result in
+        ServiceManager().fetchEarthquakeData(from: Constants.urlString+DateUtility.currentDate()) { result in
             switch result {
             case .success(let data):
                 completion(.success(data))

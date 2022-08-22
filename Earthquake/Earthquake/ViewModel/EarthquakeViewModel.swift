@@ -9,14 +9,15 @@ import Foundation
 import NetworkCore
 
 final class EarthquakeViewModel {
-    var earthQuakes: Earthquake?
+    private(set) var earthQuakes: Earthquake?
     var numberOfRows: Int {
         return earthQuakes?.features.count ?? 0
     }
     var error: NetworkError? = nil
     let dataManager: DataManager
-    init(dataManager: DataManager = DataManager.shared) {
+    init(earthQuakes: Earthquake? = nil, dataManager: DataManager = DataManager.shared) {
         self.dataManager = dataManager
+        self.earthQuakes = earthQuakes
     }
 }
 

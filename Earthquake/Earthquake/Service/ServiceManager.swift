@@ -31,8 +31,8 @@ final class ServiceManager: ApiCreator {
                 case .failure(_):
                     completion(.failure(NetworkError.noInternet))
                 case .success(let data):
+                    NetworkMonitor.shared.stopMonitoring()
                     do {
-                        NetworkMonitor.shared.stopMonitoring()
                         let modelObject = try JSONDecoder().decode(Earthquake.self, from: data)
                         completion(.success(modelObject))
                     } catch {

@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Constants {
-    static let urlString = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2022-08-17"
+enum Constants {
+    static let urlString = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime="
     static let earthquakeTitle = "EarthQuake Data"
     static let noUrlError = "Url Not found"
     static let emptyString = ""

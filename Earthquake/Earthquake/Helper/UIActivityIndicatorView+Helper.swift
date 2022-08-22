@@ -12,18 +12,18 @@ extension UIActivityIndicatorView {
     /// Convfigure activityview.
     /// Private access so it cannot be modified from outside
     /// Returns self
-    private func configureActivityIndicator(with view: UIView) -> UIActivityIndicatorView {
+    private func configure(with view: UIView) -> UIActivityIndicatorView {
         self.color = UIColor.brown
         self.center = view.center
         self.startAnimating()
         return self
     }
     
-    func showLoadingIndicator(with view: UIView) {
-        view.addSubview(configureActivityIndicator(with: view))
+    func show(with view: UIView) {
+        view.addSubview(configure(with: view))
     }
     
-    func hideLoadingIndicator() {
+    func hide() {
         self.stopAnimating()
         self.removeFromSuperview()
     }
