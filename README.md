@@ -6,6 +6,10 @@ Design Pattern: MVVM
 
 Deployment target: 13.0
 
+Device support: iPhone/iPad
+
+Orientation: Potrait/Landscape
+
 Details:
 
 * App will fetch data of earthquake for past 30 days as per api documentation
