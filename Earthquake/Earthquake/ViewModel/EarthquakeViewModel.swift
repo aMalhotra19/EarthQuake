@@ -11,7 +11,7 @@ import NetworkCore
 final class EarthquakeViewModel {
     private(set) var earthQuakes: Earthquake?
     var numberOfRows: Int {
-        return earthQuakes?.features.count ?? 0
+        return earthQuakes?.features?.count ?? 0
     }
     var error: NetworkError? = nil
     let dataManager: DataManager

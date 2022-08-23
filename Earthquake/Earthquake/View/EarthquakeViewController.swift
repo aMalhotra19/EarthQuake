@@ -82,16 +82,16 @@ extension EarthquakeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(EarthquakeCell.self)") as? EarthquakeCell, let properties = viewModel.earthQuakes?.features[indexPath.row].properties else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(EarthquakeCell.self)") as? EarthquakeCell, let properties = viewModel.earthQuakes?.features?[indexPath.row].properties else {
             return UITableViewCell()
         }
-        let cellViewModel = EarthquakeCellViewModel(title: properties.title, magnitude: String(properties.mag), time: properties.time)
+        let cellViewModel = EarthquakeCellViewModel(title: properties.title, magnitude: String(properties.mag ?? 0), time: properties.time)
         cell.configureCell(cellViewModel: cellViewModel)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let urlString = viewModel.earthQuakes?.features[indexPath.row].properties.url, let url = URL(string: urlString) else {
+        guard let urlString = viewModel.earthQuakes?.features?[indexPath.row].properties?.url, let url = URL(string: urlString) else {
             showAlert(Constants.noUrlError)
             return
         }
