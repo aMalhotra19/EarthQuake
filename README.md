@@ -1,4 +1,4 @@
-# Dummy handson project to try out new APIs and implementation
+# Dummy hands-on project to try out new APIs and implementation
 # Dear Reviewer, Thank you for taking time to review my code.
 
 Listing out the details of the code as below:
